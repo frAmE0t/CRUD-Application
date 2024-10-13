@@ -1,0 +1,32 @@
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\appsettings.Development.json
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\appsettings.json
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\CRUD Application.exe
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\CRUD Application.deps.json
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\CRUD Application.runtimeconfig.json
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\CRUD Application.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\CRUD Application.pdb
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\CRUD Application.csproj.AssemblyReference.cache
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\CRUD Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\CRUD Application.AssemblyInfoInputs.cache
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\CRUD Application.AssemblyInfo.cs
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\CRUD Application.csproj.CoreCompileInputs.cache
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\CRUD Application.MvcApplicationPartsAssemblyInfo.cs
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\CRUD Application.MvcApplicationPartsAssemblyInfo.cache
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\staticwebassets.build.json
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\staticwebassets.development.json
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\staticwebassets\msbuild.CRUD Application.Microsoft.AspNetCore.StaticWebAssets.props
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\staticwebassets\msbuild.build.CRUD Application.props
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.CRUD Application.props
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.CRUD Application.props
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\staticwebassets.pack.json
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\scopedcss\bundle\CRUD Application.styles.css
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\CRUD App.5A8912D4.Up2Date
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\CRUD Application.dll
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\refint\CRUD Application.dll
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\CRUD Application.pdb
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\CRUD Application.genruntimeconfig.cache
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\ref\CRUD Application.dll
