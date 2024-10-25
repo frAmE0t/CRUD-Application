@@ -1,8 +1,15 @@
+using GamesMarket.DataContext;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddDbContext<GamesMarketContext>(options =>
+{
+    options.UseSqlServer(builder.Configuration.GetConnectionString("GamesMarketDb"));
+});
 
 var app = builder.Build();
 

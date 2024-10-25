@@ -1,4 +1,6 @@
-﻿namespace GamesMarket.Models
+﻿using System.Xml.Linq;
+
+namespace GamesMarket.Models
 {
     public class Game
     {
