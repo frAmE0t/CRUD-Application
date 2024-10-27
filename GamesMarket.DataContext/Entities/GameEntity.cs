@@ -12,6 +12,6 @@ namespace GamesMarket.DataContext.Entities
         [Column(TypeName = "money")]
         public decimal Price { get; set; }
         public Guid DeveloperId { get; set; }
-        public DeveloperEntity? Developer { get; set; }
+        public DeveloperEntity? Developer { get; set; } = null;
     }
 }
