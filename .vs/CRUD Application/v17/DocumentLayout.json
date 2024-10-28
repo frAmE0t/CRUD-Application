@@ -58,15 +58,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
@@ -78,8 +74,7 @@
               "RelativeToolTip": "CRUD Application\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T14:39:22.246Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T14:39:22.246Z"
             },
             {
               "$type": "Document",
@@ -89,7 +84,7 @@
               "RelativeDocumentMoniker": "GamesMarket.DataContext\\Repository\\GameRepository.cs",
               "ToolTip": "D:\\C#\\CRUD Application\\GamesMarket.DataContext\\Repository\\GameRepository.cs",
               "RelativeToolTip": "GamesMarket.DataContext\\Repository\\GameRepository.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAmwCUAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwEgAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-27T14:15:40.007Z",
               "EditorCaption": ""
@@ -104,8 +99,7 @@
               "RelativeToolTip": "GamesMarket.DataContext\\Interfaces\\IGameRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T13:59:38.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T13:59:38.236Z"
             },
             {
               "$type": "Document",
@@ -129,8 +123,7 @@
               "RelativeToolTip": "GamesMarket.DataContext\\Entities\\DeveloperEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T17:46:45.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T17:46:45.846Z"
             },
             {
               "$type": "Document",
@@ -154,8 +147,7 @@
               "RelativeToolTip": "GamesMarket\\Models\\Game.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T13:38:41.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T13:38:41.78Z"
             },
             {
               "$type": "Document",
@@ -179,8 +171,7 @@
               "RelativeToolTip": "CRUD Application\\CRUD Application.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-10-13T13:02:11.589Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T13:02:11.589Z"
             },
             {
               "$type": "Document",
@@ -192,8 +183,7 @@
               "RelativeToolTip": "GamesMarket.DataContext\\Entities\\GameEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T13:50:12.261Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T13:50:12.261Z"
             },
             {
               "$type": "Document",
@@ -218,6 +208,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-19T15:09:00.472Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }

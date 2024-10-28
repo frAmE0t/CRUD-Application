@@ -1,6 +1,7 @@
 ﻿using GamesMarket.DataContext.Entities;
 using GamesMarket.DataContext.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection.Metadata.Ecma335;
 
 namespace GamesMarket.DataContext.Repository
 {
@@ -24,7 +25,7 @@ namespace GamesMarket.DataContext.Repository
             };
 
             var addedGame = await _db.Games.AddAsync(game);
-            _db.SaveChanges();
+            await _db.SaveChangesAsync();
 
             if (addedGame is null)
                 return null;
@@ -37,16 +38,16 @@ namespace GamesMarket.DataContext.Repository
 
             _db.Games.Remove(game);
 
-            int affected = _db.SaveChanges();
+            int affected = await _db.SaveChangesAsync();
 
             if (affected == 1)
                 return true;
             return false;
         }
 
-        public Task<List<GameEntity?>> GetAllGames()
+        public async Task<List<GameEntity?>> GetAllGames()
         {
-            return _db.Games.ToListAsync();
+            return await _db.Games.ToListAsync();
         }
 
         public async Task<GameEntity?> GetGame(Guid id)
@@ -58,23 +59,18 @@ namespace GamesMarket.DataContext.Repository
 
         public async Task<GameEntity?> UpdateGame(Guid id, string name, string description, decimal price)
         {
-            GameEntity newGame = new()
-            {
-                Id = id,
-                Name = name,
-                Description = description,
-                Price = price
-            };
-
             var game = await _db.Games.FirstOrDefaultAsync(g => g.Id == id);
 
-            _db.Games.Entry(game).CurrentValues.SetValues(newGame);
+            if (game is null)
+                return null;
 
-            int affected = _db.SaveChanges();
+            game.Name = name;
+            game.Description = description;
+            game.Price = price;
 
-            if (affected == 1)
-                return newGame;
-            return null;
+            await _db.SaveChangesAsync();
+
+            return game;
         }
     }
 }
