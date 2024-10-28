@@ -1,7 +1,6 @@
 ﻿using GamesMarket.DataContext.Entities;
 using GamesMarket.DataContext.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Metadata.Ecma335;
 
 namespace GamesMarket.DataContext.Repository
 {
