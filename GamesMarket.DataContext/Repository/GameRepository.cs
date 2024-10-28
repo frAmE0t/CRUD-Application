@@ -14,7 +14,7 @@ namespace GamesMarket.DataContext.Repository
             _db = db;
         }
 
-        public async Task<GameEntity?> CreateGame(Guid id, string name, string description, decimal price)
+        public async Task<GameEntity> CreateGame(Guid id, string name, string description, decimal price)
         {
             GameEntity game = new()
             {
@@ -24,11 +24,9 @@ namespace GamesMarket.DataContext.Repository
                 Price = price
             };
 
-            var addedGame = await _db.Games.AddAsync(game);
+            await _db.Games.AddAsync(game);
             await _db.SaveChangesAsync();
 
-            if (addedGame is null)
-                return null;
             return game;
         }
 
@@ -38,31 +36,26 @@ namespace GamesMarket.DataContext.Repository
 
             _db.Games.Remove(game);
 
-            int affected = await _db.SaveChangesAsync();
+            await _db.SaveChangesAsync();
 
-            if (affected == 1)
-                return true;
-            return false;
+            if (game is null)
+                return false;
+            return true;
         }
 
-        public async Task<List<GameEntity?>> GetAllGames()
+        public async Task<List<GameEntity>?> GetAllGames()
         {
             return await _db.Games.ToListAsync();
         }
 
         public async Task<GameEntity?> GetGame(Guid id)
         {
-            var game = await _db.Games.FirstOrDefaultAsync(g => g.Id == id);
-
-            return game;
+            return await _db.Games.FirstOrDefaultAsync(g => g.Id == id);
         }
 
         public async Task<GameEntity?> UpdateGame(Guid id, string name, string description, decimal price)
         {
             var game = await _db.Games.FirstOrDefaultAsync(g => g.Id == id);
-
-            if (game is null)
-                return null;
 
             game.Name = name;
             game.Description = description;
