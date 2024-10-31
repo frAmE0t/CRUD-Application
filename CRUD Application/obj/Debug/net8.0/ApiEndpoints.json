@@ -21,6 +21,47 @@
   },
   {
     "ContainingType": "CRUD_Application.Controllers.GameController",
+    "Method": "CreateGame",
+    "RelativePath": "Game",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": false
+      },
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "description",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GamesMarket.DataContext.Entities.GameEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CRUD_Application.Controllers.GameController",
     "Method": "GetGame",
     "RelativePath": "Game/{id}",
     "HttpMethod": "GET",

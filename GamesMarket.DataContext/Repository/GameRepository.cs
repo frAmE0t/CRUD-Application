@@ -56,6 +56,9 @@ namespace GamesMarket.DataContext.Repository
         {
             var game = await _db.Games.FirstOrDefaultAsync(g => g.Id == id);
 
+            if (game is null)
+                return null;
+
             game.Name = name;
             game.Description = description;
             game.Price = price;

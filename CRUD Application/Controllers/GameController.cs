@@ -17,15 +17,30 @@ namespace CRUD_Application.Controllers
         }
 
         [HttpGet]
-        public async Task<List<GameEntity>?> GetAllGames()
+        public async Task<ActionResult<List<GameEntity>?>> GetAllGames()
         {
-            return await _gameRepository.GetAllGames();
+            return Ok(await _gameRepository.GetAllGames());
         }
 
-        [HttpGet("{id}")]
-        public async Task<GameEntity?> GetGame(Guid id)
+        [HttpGet("{id:guid}")]
+        public async Task<ActionResult<GameEntity>> GetGame(Guid id)
         {
-            return await _gameRepository.GetGame(id);
+            var game = await _gameRepository.GetGame(id);
+
+            if (game is null)
+                return NotFound();
+            return Ok(game);
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<GameEntity?>> CreateGame(Guid id, string name, string description, decimal price)
+        {
+            GameEntity game = await _gameRepository.CreateGame(id, name, description, price);
+
+            if (game is null)
+                return BadRequest("Game wasn't created.");
+
+            return Ok(game);
         }
     }
 }
