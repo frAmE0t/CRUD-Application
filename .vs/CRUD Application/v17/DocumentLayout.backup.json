@@ -66,15 +66,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
               "$type": "Document",
@@ -84,7 +80,7 @@
               "RelativeDocumentMoniker": "CRUD Application\\Controllers\\GameController.cs",
               "ToolTip": "D:\\C#\\CRUD Application\\CRUD Application\\Controllers\\GameController.cs",
               "RelativeToolTip": "CRUD Application\\Controllers\\GameController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAcwCsAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAkwDYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T18:36:51.636Z",
               "EditorCaption": ""
@@ -99,8 +95,7 @@
               "RelativeToolTip": "GamesMarket.DataContext\\Interfaces\\IGameRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T13:59:38.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T13:59:38.236Z"
             },
             {
               "$type": "Document",
@@ -112,8 +107,7 @@
               "RelativeToolTip": "GamesMarket.DataContext\\Repository\\GameRepository.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAQwDsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T14:15:40.007Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-27T14:15:40.007Z"
             },
             {
               "$type": "Document",
@@ -137,8 +131,7 @@
               "RelativeToolTip": "CRUD Application\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-10-19T15:09:00.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T15:09:00.472Z"
             },
             {
               "$type": "Document",
@@ -162,8 +155,7 @@
               "RelativeToolTip": "GamesMarket.DataContext\\Entities\\GameEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T13:50:12.261Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-13T13:50:12.261Z"
             },
             {
               "$type": "Document",
@@ -175,8 +167,7 @@
               "RelativeToolTip": "GamesMarket.DataContext\\Configuration\\GameConfiguration.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAwwBsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T12:53:08.123Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T12:53:08.123Z"
             },
             {
               "$type": "Document",
@@ -249,6 +240,10 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-13T13:46:23.901Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }

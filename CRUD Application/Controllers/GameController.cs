@@ -42,5 +42,16 @@ namespace CRUD_Application.Controllers
 
             return Ok(game);
         }
+
+        [HttpPut("{id:guid}")]
+        public async Task<ActionResult<GameEntity?>> UpdateGame(Guid id, [FromBody] GameEntity requestGame)
+        {
+            var game = await _gameRepository.UpdateGame(id, requestGame.Name, requestGame.Description, requestGame.Price);
+
+            if (game is null)
+                return BadRequest("Game with that ID wasn't found.");
+
+            return Ok(game);
+        }
     }
 }
