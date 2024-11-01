@@ -53,5 +53,16 @@ namespace CRUD_Application.Controllers
 
             return Ok(game);
         }
+
+        [HttpDelete("{id:guid}")]
+        public async Task<ActionResult> DeleteGame(Guid id)
+        {
+            bool isDeleted = await _gameRepository.DeleteGame(id);
+
+            if (!isDeleted)
+                return BadRequest("Game with that ID wasn't found.");
+
+            return Ok();
+        }
     }
 }
