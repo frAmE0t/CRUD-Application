@@ -6,21 +6,15 @@ namespace GamesMarket.DataContext.Repository
 {
     public class DeveloperRepository : IDeveloperRepository
     {
-        private GamesMarketContext _db { get; set; }
+        private readonly GamesMarketContext _db;
 
         public DeveloperRepository(GamesMarketContext db)
         {
             _db = db;
         }
 
-        public async Task<DeveloperEntity> CreateDeveper(Guid id, string name)
+        public async Task<DeveloperEntity> CreateDeveper(DeveloperEntity developer)
         {
-            DeveloperEntity developer = new()
-            {
-                Id = id,
-                Name = name
-            };
-
             await _db.Developers.AddAsync(developer);
             await _db.SaveChangesAsync();
 
@@ -31,11 +25,12 @@ namespace GamesMarket.DataContext.Repository
         {
             var game = await _db.Developers.FirstOrDefaultAsync(d => d.Id == id);
 
+            if (game is null)
+                return false;
+
             _db.Developers.Remove(game);
             await _db.SaveChangesAsync();
 
-            if (game is null)
-                return false;
             return true;
         }
 

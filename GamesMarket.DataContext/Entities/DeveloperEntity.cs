@@ -9,6 +9,6 @@ namespace GamesMarket.DataContext.Entities
 
         [Column(TypeName = "nvarchar")]
         public string Name { get; set; } = string.Empty;
-        public IEnumerable<GameEntity>? Games { get; set; }
+        public IEnumerable<GameEntity>? Games { get; set; } = null;
     }
 }

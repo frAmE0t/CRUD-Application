@@ -1,5 +1,124 @@
 [
   {
+    "ContainingType": "CRUD_Application.Controllers.DeveloperController",
+    "Method": "GetAllDevelopers",
+    "RelativePath": "Developer",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[GamesMarket.DataContext.Entities.DeveloperEntity, GamesMarket.DataContext, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CRUD_Application.Controllers.DeveloperController",
+    "Method": "CreateDeveloper",
+    "RelativePath": "Developer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "developer",
+        "Type": "GamesMarket.DataContext.Entities.DeveloperEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GamesMarket.DataContext.Entities.DeveloperEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CRUD_Application.Controllers.DeveloperController",
+    "Method": "GetDeveloper",
+    "RelativePath": "Developer/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GamesMarket.DataContext.Entities.DeveloperEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "CRUD_Application.Controllers.DeveloperController",
+    "Method": "DeleteDeveloper",
+    "RelativePath": "Developer/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CRUD_Application.Controllers.DeveloperController",
+    "Method": "UpdateDeveloper",
+    "RelativePath": "Developer/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "developer",
+        "Type": "GamesMarket.DataContext.Entities.DeveloperEntity",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "GamesMarket.DataContext.Entities.DeveloperEntity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "CRUD_Application.Controllers.GameController",
     "Method": "GetAllGames",
     "RelativePath": "Game",

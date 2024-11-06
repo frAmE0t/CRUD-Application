@@ -33,7 +33,7 @@ namespace CRUD_Application.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<GameEntity?>> CreateGame(Guid id, string name, string description, decimal price)
+        public async Task<ActionResult<GameEntity>> CreateGame(Guid id, string name, string description, decimal price)
         {
             GameEntity game = await _gameRepository.CreateGame(id, name, description, price);
 
@@ -44,7 +44,7 @@ namespace CRUD_Application.Controllers
         }
 
         [HttpPut("{id:guid}")]
-        public async Task<ActionResult<GameEntity?>> UpdateGame(Guid id, [FromBody] GameEntity requestGame)
+        public async Task<ActionResult<GameEntity>> UpdateGame(Guid id, [FromBody] GameEntity requestGame)
         {
             var game = await _gameRepository.UpdateGame(id, requestGame.Name, requestGame.Description, requestGame.Price);
 

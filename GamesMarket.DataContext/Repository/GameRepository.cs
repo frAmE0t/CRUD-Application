@@ -6,7 +6,7 @@ namespace GamesMarket.DataContext.Repository
 {
     public class GameRepository : IGameRepository
     {
-        private GamesMarketContext _db { get; set; }
+        private readonly GamesMarketContext _db;
 
         public GameRepository(GamesMarketContext db)
         {
