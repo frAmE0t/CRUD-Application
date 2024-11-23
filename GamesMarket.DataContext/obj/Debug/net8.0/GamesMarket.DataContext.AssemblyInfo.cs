@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GamesMarket.DataContext")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1100be1e8c4e59d0067fc7cbb546cc2a01027596")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1cd6bbf8834563f6180821fdf2f07ed79df2bcd4")]
 [assembly: System.Reflection.AssemblyProductAttribute("GamesMarket.DataContext")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GamesMarket.DataContext")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

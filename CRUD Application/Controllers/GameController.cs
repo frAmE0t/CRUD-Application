@@ -1,6 +1,8 @@
-﻿using GamesMarket.DataContext.Entities;
+﻿using CRUD_Application.Records;
+using GamesMarket.DataContext.Entities;
 using GamesMarket.DataContext.Interfaces;
 using GamesMarket.DataContext.Repository;
+using GamesMarket.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRUD_Application.Controllers
@@ -23,42 +25,44 @@ namespace CRUD_Application.Controllers
         }
 
         [HttpGet("{id:guid}")]
-        public async Task<ActionResult<GameEntity>> GetGame(Guid id)
+        public async Task<ActionResult<GameRecord>> GetGame(Guid id)
         {
             var game = await _gameRepository.GetGame(id);
 
             if (game is null)
                 return NotFound();
-            return Ok(game);
+            
+            GameRecord record = new(game.Id, game.Name, game.Description, game.Price, game.DeveloperId);
+            return Ok(record);
         }
 
         [HttpPost]
-        public async Task<ActionResult<GameEntity>> CreateGame(Guid id, string name, string description, decimal price)
+        public async Task<ActionResult<GameRecord>> CreateGame([FromBody] Game game)
         {
-            GameEntity game = await _gameRepository.CreateGame(id, name, description, price);
-
-            if (game is null)
-                return BadRequest("Game wasn't created.");
-
-            return Ok(game);
+            GameEntity createdGame = await _gameRepository.CreateGame(game.Id, game.Name, game.Description, game.Price, game.DeveloperId);
+            GameRecord record = new(createdGame.Id, createdGame.Name, createdGame.Description, createdGame.Price, createdGame.DeveloperId);
+            
+            return Ok(record);
         }
 
         [HttpPut("{id:guid}")]
-        public async Task<ActionResult<GameEntity>> UpdateGame(Guid id, [FromBody] GameEntity requestGame)
+        public async Task<ActionResult<GameRecord>> UpdateGame([FromBody] Game game)
         {
-            var game = await _gameRepository.UpdateGame(id, requestGame.Name, requestGame.Description, requestGame.Price);
+            var updatedGame = await _gameRepository.UpdateGame(game.Id, game.Name, game.Description, game.Price, game.DeveloperId);
 
-            if (game is null)
+            if (updatedGame is null)
                 return BadRequest("Game with that ID wasn't found.");
 
-            return Ok(game);
+            GameRecord record = new(updatedGame.Id, updatedGame.Name, updatedGame.Description, updatedGame.Price, updatedGame.DeveloperId);
+            
+            return Ok(record);
         }
 
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult> DeleteGame(Guid id)
         {
             bool isDeleted = await _gameRepository.DeleteGame(id);
-
+            
             if (!isDeleted)
                 return BadRequest("Game with that ID wasn't found.");
 

@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "RTjtwlvR7i/Nc5poEu+C2czgLL7MFVEAQYb0877CbQI=",
+  "Hash": "HMk8tZTDoF1RUtMOsOO9fpfG+EtUfnEevh4Aif4Obnw=",
   "Source": "CRUD Application",
   "BasePath": "_content/CRUD Application",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

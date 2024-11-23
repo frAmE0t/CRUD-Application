@@ -1,5 +1,6 @@
 ﻿using GamesMarket.DataContext.Entities;
 using GamesMarket.DataContext.Interfaces;
+using GamesMarket.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace GamesMarket.DataContext.Repository
@@ -13,32 +14,52 @@ namespace GamesMarket.DataContext.Repository
             _db = db;
         }
 
-        public async Task<GameEntity> CreateGame(Guid id, string name, string description, decimal price)
+        public async Task<GameEntity> CreateGame(Guid id, string name, string description, decimal price, Guid? developerId)
         {
-            GameEntity game = new()
+            Game game = new(id, name, description, price, developerId);
+            
+            GameEntity gameEntity = new()
             {
-                Id = id,
-                Name = name,
-                Description = description,
-                Price = price
+                Id = game.Id,
+                Name = game.Name,
+                Description = game.Description,
+                Price = game.Price,
+                DeveloperId = developerId
             };
 
-            await _db.Games.AddAsync(game);
-            await _db.SaveChangesAsync();
+            if (developerId is not null)
+            {
+                var developer = await _db.Developers.FirstOrDefaultAsync(d => d.Id == developerId);
 
-            return game;
+                if (developer is not null)
+                {
+                    gameEntity.Developer = developer;
+                    
+                    if (developer.Games is null)
+                        developer.Games = new();
+                    developer.Games.Add(gameEntity);
+                }
+            }
+            
+            await _db.Games.AddAsync(gameEntity);
+            await _db.SaveChangesAsync();
+            
+            return gameEntity;
         }
 
         public async Task<bool> DeleteGame(Guid id)
         {
             var game = await _db.Games.FirstOrDefaultAsync(g => g.Id == id);
-
-            _db.Games.Remove(game);
-
-            await _db.SaveChangesAsync();
-
             if (game is null)
                 return false;
+            
+            var developer = await _db.Developers.FirstOrDefaultAsync(d => d.Games.Contains(game));
+            if (developer is not null)
+                developer.Games!.Remove(game);
+            
+            _db.Games.Remove(game);
+            await _db.SaveChangesAsync();
+            
             return true;
         }
 
@@ -52,7 +73,7 @@ namespace GamesMarket.DataContext.Repository
             return await _db.Games.FirstOrDefaultAsync(g => g.Id == id);
         }
 
-        public async Task<GameEntity?> UpdateGame(Guid id, string name, string description, decimal price)
+        public async Task<GameEntity?> UpdateGame(Guid id, string name, string description, decimal price, Guid? developerId)
         {
             var game = await _db.Games.FirstOrDefaultAsync(g => g.Id == id);
 
@@ -62,6 +83,7 @@ namespace GamesMarket.DataContext.Repository
             game.Name = name;
             game.Description = description;
             game.Price = price;
+            game.DeveloperId = developerId;
 
             await _db.SaveChangesAsync();
 

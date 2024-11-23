@@ -1,5 +1,6 @@
 ﻿using GamesMarket.DataContext.Entities;
 using GamesMarket.DataContext.Interfaces;
+using GamesMarket.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace GamesMarket.DataContext.Repository
@@ -13,22 +14,41 @@ namespace GamesMarket.DataContext.Repository
             _db = db;
         }
 
-        public async Task<DeveloperEntity> CreateDeveper(DeveloperEntity developer)
+        public async Task<DeveloperEntity> CreateDeveper(Guid id, string name)
         {
-            await _db.Developers.AddAsync(developer);
+            Developer developer = new(id, name);
+            
+            DeveloperEntity developerEntityEntity = new()
+            {
+                Id = developer.Id,
+                Name = developer.Name,
+            };
+
+            List<GameEntity> games = await _db.Games.Where(g => g.DeveloperId == developer.Id).ToListAsync();
+            
+            developerEntityEntity.Games.AddRange(games);
+            
+            await _db.Developers.AddAsync(developerEntityEntity);
             await _db.SaveChangesAsync();
 
-            return developer;
+            return developerEntityEntity;
         }
 
         public async Task<bool> DeleteDeveper(Guid id)
         {
-            var game = await _db.Developers.FirstOrDefaultAsync(d => d.Id == id);
+            var developer = await _db.Developers.FirstOrDefaultAsync(d => d.Id == id);
 
-            if (game is null)
+            if (developer is null)
                 return false;
 
-            _db.Developers.Remove(game);
+            List<GameEntity> games = await _db.Games.Where(g => g.DeveloperId == developer.Id).ToListAsync();
+            foreach (GameEntity game in games)
+            {
+                game.DeveloperId = null;
+                game.Developer = null;
+            }
+            
+            _db.Developers.Remove(developer);
             await _db.SaveChangesAsync();
 
             return true;

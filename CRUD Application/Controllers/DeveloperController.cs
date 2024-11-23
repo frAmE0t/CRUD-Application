@@ -1,5 +1,6 @@
 ﻿using GamesMarket.DataContext.Entities;
 using GamesMarket.DataContext.Interfaces;
+using GamesMarket.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRUD_Application.Controllers
@@ -32,9 +33,9 @@ namespace CRUD_Application.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<DeveloperEntity>> CreateDeveloper([FromBody] DeveloperEntity developer)
+        public async Task<ActionResult<DeveloperEntity>> CreateDeveloper([FromBody] Developer developer)
         {
-            return Ok(await _developerRepository.CreateDeveper(developer));
+            return Ok(await _developerRepository.CreateDeveper(developer.Id, developer.Name));
         }
 
         [HttpDelete("{id:guid}")]
@@ -48,9 +49,9 @@ namespace CRUD_Application.Controllers
         }
 
         [HttpPut("{id:guid}")]
-        public async Task<ActionResult<DeveloperEntity>> UpdateDeveloper(Guid id, [FromBody] DeveloperEntity developer)
+        public async Task<ActionResult<DeveloperEntity>> UpdateDeveloper(Developer developer)
         {
-            var updatedDeveloper = await _developerRepository.UpdateDeveper(id, developer.Name);
+            var updatedDeveloper = await _developerRepository.UpdateDeveper(developer.Id, developer.Name);
 
             if (updatedDeveloper is null)
                 return BadRequest("Developer wasn't updated");

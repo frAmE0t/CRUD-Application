@@ -1,0 +1,12 @@
+D:\C#\CRUD Application\GamesMarket\bin\Debug\net8.0\GamesMarket.deps.json
+D:\C#\CRUD Application\GamesMarket\bin\Debug\net8.0\GamesMarket.dll
+D:\C#\CRUD Application\GamesMarket\bin\Debug\net8.0\GamesMarket.pdb
+D:\C#\CRUD Application\GamesMarket\obj\Debug\net8.0\GamesMarket.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\CRUD Application\GamesMarket\obj\Debug\net8.0\GamesMarket.AssemblyInfoInputs.cache
+D:\C#\CRUD Application\GamesMarket\obj\Debug\net8.0\GamesMarket.AssemblyInfo.cs
+D:\C#\CRUD Application\GamesMarket\obj\Debug\net8.0\GamesMarket.csproj.CoreCompileInputs.cache
+D:\C#\CRUD Application\GamesMarket\obj\Debug\net8.0\GamesMarket.sourcelink.json
+D:\C#\CRUD Application\GamesMarket\obj\Debug\net8.0\GamesMarket.dll
+D:\C#\CRUD Application\GamesMarket\obj\Debug\net8.0\refint\GamesMarket.dll
+D:\C#\CRUD Application\GamesMarket\obj\Debug\net8.0\GamesMarket.pdb
+D:\C#\CRUD Application\GamesMarket\obj\Debug\net8.0\ref\GamesMarket.dll

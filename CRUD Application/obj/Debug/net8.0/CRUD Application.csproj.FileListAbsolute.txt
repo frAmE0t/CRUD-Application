@@ -77,3 +77,18 @@ D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\runtimes\win\lib\net6.0
 D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\GamesMarket.DataContext.dll
 D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\GamesMarket.DataContext.pdb
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\CRUD Application.staticwebassets.endpoints.json
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\staticwebassets\msbuild.CRUD Application.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\System.ClientModel.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\System.Text.Json.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\GamesMarket.dll
+D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\GamesMarket.pdb

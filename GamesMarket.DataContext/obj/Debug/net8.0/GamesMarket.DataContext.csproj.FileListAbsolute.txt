@@ -11,3 +11,6 @@ D:\C#\CRUD Application\GamesMarket.DataContext\obj\Debug\net8.0\GamesMarket.Data
 D:\C#\CRUD Application\GamesMarket.DataContext\obj\Debug\net8.0\refint\GamesMarket.DataContext.dll
 D:\C#\CRUD Application\GamesMarket.DataContext\obj\Debug\net8.0\GamesMarket.DataContext.pdb
 D:\C#\CRUD Application\GamesMarket.DataContext\obj\Debug\net8.0\ref\GamesMarket.DataContext.dll
+D:\C#\CRUD Application\GamesMarket.DataContext\bin\Debug\net8.0\GamesMarket.dll
+D:\C#\CRUD Application\GamesMarket.DataContext\bin\Debug\net8.0\GamesMarket.pdb
+D:\C#\CRUD Application\GamesMarket.DataContext\obj\Debug\net8.0\GamesMar.A653BB2F.Up2Date
