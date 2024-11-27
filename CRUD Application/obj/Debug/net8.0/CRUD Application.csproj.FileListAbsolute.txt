@@ -92,3 +92,4 @@ D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\System.Text.Json.dll
 D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
 D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\GamesMarket.dll
 D:\C#\CRUD Application\CRUD Application\bin\Debug\net8.0\GamesMarket.pdb
+D:\C#\CRUD Application\CRUD Application\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

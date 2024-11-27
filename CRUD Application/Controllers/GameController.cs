@@ -1,7 +1,6 @@
 ﻿using CRUD_Application.Records;
 using GamesMarket.DataContext.Entities;
 using GamesMarket.DataContext.Interfaces;
-using GamesMarket.DataContext.Repository;
 using GamesMarket.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,9 +18,22 @@ namespace CRUD_Application.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<GameEntity>?>> GetAllGames()
+        public async Task<ActionResult<List<GameRecord>?>> GetAllGames()
         {
-            return Ok(await _gameRepository.GetAllGames());
+            List<GameEntity> gamesList = await _gameRepository.GetAllGames();
+            List<GameRecord>? recordsList = null;
+            
+            if (gamesList is not null)
+            {
+                recordsList = new();
+
+                foreach (GameEntity game in gamesList)
+                {
+                    GameRecord record = new(game.Id, game.Name, game.Description, game.Price, game.DeveloperId);
+                    recordsList.Add(record);
+                }
+            }
+            return Ok(recordsList);
         }
 
         [HttpGet("{id:guid}")]

@@ -50,17 +50,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DeveloperEntity"
+                "$ref": "#/components/schemas/Developer"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DeveloperEntity"
+                "$ref": "#/components/schemas/Developer"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DeveloperEntity"
+                "$ref": "#/components/schemas/Developer"
               }
             }
           }
@@ -159,8 +159,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -168,17 +167,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/DeveloperEntity"
+                "$ref": "#/components/schemas/Developer"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/DeveloperEntity"
+                "$ref": "#/components/schemas/Developer"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/DeveloperEntity"
+                "$ref": "#/components/schemas/Developer"
               }
             }
           }
@@ -220,7 +219,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GameEntity"
+                    "$ref": "#/components/schemas/GameRecord"
                   }
                 }
               },
@@ -228,7 +227,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GameEntity"
+                    "$ref": "#/components/schemas/GameRecord"
                   }
                 }
               },
@@ -236,7 +235,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/GameEntity"
+                    "$ref": "#/components/schemas/GameRecord"
                   }
                 }
               }
@@ -248,55 +247,42 @@
         "tags": [
           "Game"
         ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          },
-          {
-            "name": "name",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "description",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "price",
-            "in": "query",
-            "schema": {
-              "type": "number",
-              "format": "double"
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Game"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Game"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Game"
+              }
             }
           }
-        ],
+        },
         "responses": {
           "200": {
             "description": "OK",
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GameEntity"
+                  "$ref": "#/components/schemas/GameRecord"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GameEntity"
+                  "$ref": "#/components/schemas/GameRecord"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GameEntity"
+                  "$ref": "#/components/schemas/GameRecord"
                 }
               }
             }
@@ -326,17 +312,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GameEntity"
+                  "$ref": "#/components/schemas/GameRecord"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GameEntity"
+                  "$ref": "#/components/schemas/GameRecord"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GameEntity"
+                  "$ref": "#/components/schemas/GameRecord"
                 }
               }
             }
@@ -353,8 +339,7 @@
             "in": "path",
             "required": true,
             "schema": {
-              "type": "string",
-              "format": "uuid"
+              "type": "string"
             }
           }
         ],
@@ -362,17 +347,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/GameEntity"
+                "$ref": "#/components/schemas/Game"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/GameEntity"
+                "$ref": "#/components/schemas/Game"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/GameEntity"
+                "$ref": "#/components/schemas/Game"
               }
             }
           }
@@ -383,17 +368,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/GameEntity"
+                  "$ref": "#/components/schemas/GameRecord"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GameEntity"
+                  "$ref": "#/components/schemas/GameRecord"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/GameEntity"
+                  "$ref": "#/components/schemas/GameRecord"
                 }
               }
             }
@@ -425,6 +410,20 @@
   },
   "components": {
     "schemas": {
+      "Developer": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "DeveloperEntity": {
         "type": "object",
         "properties": {
@@ -441,6 +440,33 @@
             "items": {
               "$ref": "#/components/schemas/GameEntity"
             },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Game": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "developerId": {
+            "type": "string",
+            "format": "uuid",
             "nullable": true
           }
         },
@@ -472,6 +498,33 @@
           },
           "developer": {
             "$ref": "#/components/schemas/DeveloperEntity"
+          }
+        },
+        "additionalProperties": false
+      },
+      "GameRecord": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "price": {
+            "type": "number",
+            "format": "double"
+          },
+          "developerId": {
+            "type": "string",
+            "format": "uuid",
+            "nullable": true
           }
         },
         "additionalProperties": false

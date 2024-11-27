@@ -85,6 +85,19 @@ namespace GamesMarket.DataContext.Repository
             game.Price = price;
             game.DeveloperId = developerId;
 
+            if (developerId is not null)
+            {
+                var developer = await _db.Developers.FirstOrDefaultAsync(d => d.Id == developerId);
+
+                if (developer is not null)
+                {
+                    game.Developer = developer;
+
+                    if (developer.Games is null)
+                        developer.Games = new();
+                }
+            }
+
             await _db.SaveChangesAsync();
 
             return game;
