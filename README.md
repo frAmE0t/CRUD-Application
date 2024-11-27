@@ -23,11 +23,3 @@ This is my pet-project. That web-application can perform basic CRUD operations (
 3. **Get record(s):** Choose "GET" option to get information about current game or developer with ID you have sent to. You also can get a list of the objects stored in your database.
 4. **Update record's information:** Choose "PUT" option to update an existing record. Then write down the entity ID and new information you want to add.
 5. **Delete record:** Choose "DELETE" option to delete an existing record. Then write down the entity ID click "Execute".
-
-## Contributing
-
-Contributions are welcome! If you encounter issues or have ideas for enhancements, please create a pull request.
-
-## Feedback
-
-Feel free to tailor this template to suit your project's specifics. Update installation steps, add real screenshots, and adapt the information to match your project's unique features and requirements.
