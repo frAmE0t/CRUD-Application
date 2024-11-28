@@ -35,7 +35,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "GamesMarket.DataContext.Entities.DeveloperEntity",
+        "Type": "CRUD_Application.Records.DeveloperRecord",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "GamesMarket.DataContext.Entities.DeveloperEntity",
+        "Type": "CRUD_Application.Records.DeveloperRecord",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -108,7 +108,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "GamesMarket.DataContext.Entities.DeveloperEntity",
+        "Type": "CRUD_Application.Records.DeveloperRecord",
         "MediaTypes": [
           "text/plain",
           "application/json",

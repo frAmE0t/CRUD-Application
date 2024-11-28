@@ -14,7 +14,7 @@ namespace GamesMarket.DataContext.Repository
             _db = db;
         }
 
-        public async Task<GameEntity> CreateGame(Guid id, string name, string description, decimal price, Guid? developerId)
+        public async Task<GameEntity?> CreateGame(Guid id, string name, string description, decimal price, Guid? developerId)
         {
             Game game = new(id, name, description, price, developerId);
             
@@ -34,11 +34,13 @@ namespace GamesMarket.DataContext.Repository
                 if (developer is not null)
                 {
                     gameEntity.Developer = developer;
-                    
+
                     if (developer.Games is null)
                         developer.Games = new();
                     developer.Games.Add(gameEntity);
                 }
+                else
+                    return null;
             }
             
             await _db.Games.AddAsync(gameEntity);

@@ -38,19 +38,27 @@ namespace CRUD_Application.Controllers
         }
 
         [HttpGet("{id:guid}")]
-        public async Task<ActionResult<DeveloperEntity>> GetDeveloper(Guid id)
+        public async Task<ActionResult<DeveloperRecord>> GetDeveloper(Guid id)
         {
             var developer = await _developerRepository.GetDeveper(id);
 
             if (developer is null)
                 return NotFound("Developer with that ID wasn't found");
-            return Ok(developer);
+
+            DeveloperRecord record = new(developer.Id, developer.Name);
+            return Ok(record);
         }
 
         [HttpPost]
-        public async Task<ActionResult<DeveloperEntity>> CreateDeveloper([FromBody] Developer developer)
+        public async Task<ActionResult<DeveloperRecord>> CreateDeveloper([FromBody] Developer developer)
         {
-            return Ok(await _developerRepository.CreateDeveper(developer.Id, developer.Name));
+            var entity = await _developerRepository.CreateDeveper(developer.Id, developer.Name);
+
+            if (entity is null)
+                return BadRequest("Developer was not created");
+
+            DeveloperRecord record = new(entity.Id, entity.Name);
+            return Ok(record);
         }
 
         [HttpDelete("{id:guid}")]
@@ -64,13 +72,15 @@ namespace CRUD_Application.Controllers
         }
 
         [HttpPut("{id:guid}")]
-        public async Task<ActionResult<DeveloperEntity>> UpdateDeveloper(Developer developer)
+        public async Task<ActionResult<DeveloperRecord>> UpdateDeveloper(Developer developer)
         {
             var updatedDeveloper = await _developerRepository.UpdateDeveper(developer.Id, developer.Name);
 
             if (updatedDeveloper is null)
                 return BadRequest("Developer wasn't updated");
-            return Ok(updatedDeveloper);
+
+            DeveloperRecord record = new(updatedDeveloper.Id, updatedDeveloper.Name);
+            return Ok(record);
         }
     }
 }

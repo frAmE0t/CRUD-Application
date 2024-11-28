@@ -71,17 +71,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeveloperEntity"
+                  "$ref": "#/components/schemas/DeveloperRecord"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeveloperEntity"
+                  "$ref": "#/components/schemas/DeveloperRecord"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeveloperEntity"
+                  "$ref": "#/components/schemas/DeveloperRecord"
                 }
               }
             }
@@ -111,17 +111,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeveloperEntity"
+                  "$ref": "#/components/schemas/DeveloperRecord"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeveloperEntity"
+                  "$ref": "#/components/schemas/DeveloperRecord"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeveloperEntity"
+                  "$ref": "#/components/schemas/DeveloperRecord"
                 }
               }
             }
@@ -188,17 +188,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeveloperEntity"
+                  "$ref": "#/components/schemas/DeveloperRecord"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeveloperEntity"
+                  "$ref": "#/components/schemas/DeveloperRecord"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/DeveloperEntity"
+                  "$ref": "#/components/schemas/DeveloperRecord"
                 }
               }
             }
@@ -424,27 +424,6 @@
         },
         "additionalProperties": false
       },
-      "DeveloperEntity": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "games": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/GameEntity"
-            },
-            "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
       "DeveloperRecord": {
         "type": "object",
         "properties": {
@@ -482,36 +461,6 @@
             "type": "string",
             "format": "uuid",
             "nullable": true
-          }
-        },
-        "additionalProperties": false
-      },
-      "GameEntity": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "description": {
-            "type": "string",
-            "nullable": true
-          },
-          "price": {
-            "type": "number",
-            "format": "double"
-          },
-          "developerId": {
-            "type": "string",
-            "format": "uuid",
-            "nullable": true
-          },
-          "developer": {
-            "$ref": "#/components/schemas/DeveloperEntity"
           }
         },
         "additionalProperties": false

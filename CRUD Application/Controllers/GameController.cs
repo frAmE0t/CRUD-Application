@@ -42,7 +42,7 @@ namespace CRUD_Application.Controllers
             var game = await _gameRepository.GetGame(id);
 
             if (game is null)
-                return NotFound();
+                return NotFound("Game with that ID was not found");
             
             GameRecord record = new(game.Id, game.Name, game.Description, game.Price, game.DeveloperId);
             return Ok(record);
@@ -52,6 +52,10 @@ namespace CRUD_Application.Controllers
         public async Task<ActionResult<GameRecord>> CreateGame([FromBody] Game game)
         {
             GameEntity createdGame = await _gameRepository.CreateGame(game.Id, game.Name, game.Description, game.Price, game.DeveloperId);
+
+            if (createdGame is null)
+                return BadRequest("Game was not created");
+
             GameRecord record = new(createdGame.Id, createdGame.Name, createdGame.Description, createdGame.Price, createdGame.DeveloperId);
             
             return Ok(record);

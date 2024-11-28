@@ -11,6 +11,18 @@
       "RelativeMoniker": "D:0:0:{7114E20E-F5D1-48A9-A085-CAD5F5E9E961}|CRUD Application\\CRUD Application.csproj|solutionrelative:crud application\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{B0486868-4D36-419A-A39C-07C11155D065}|GamesMarket.DataContext\\GamesMarket.DataContext.csproj|d:\\c#\\crud application\\gamesmarket.datacontext\\repository\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0486868-4D36-419A-A39C-07C11155D065}|GamesMarket.DataContext\\GamesMarket.DataContext.csproj|solutionrelative:gamesmarket.datacontext\\repository\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B0486868-4D36-419A-A39C-07C11155D065}|GamesMarket.DataContext\\GamesMarket.DataContext.csproj|d:\\c#\\crud application\\gamesmarket.datacontext\\entities\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B0486868-4D36-419A-A39C-07C11155D065}|GamesMarket.DataContext\\GamesMarket.DataContext.csproj|solutionrelative:gamesmarket.datacontext\\entities\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21CA1964-CF50-464D-8ACF-790D39618BCD}|GamesMarket\\GamesMarket.csproj|d:\\c#\\crud application\\gamesmarket\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21CA1964-CF50-464D-8ACF-790D39618BCD}|GamesMarket\\GamesMarket.csproj|solutionrelative:gamesmarket\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7114E20E-F5D1-48A9-A085-CAD5F5E9E961}|CRUD Application\\CRUD Application.csproj|d:\\c#\\crud application\\crud application\\records\\developerrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7114E20E-F5D1-48A9-A085-CAD5F5E9E961}|CRUD Application\\CRUD Application.csproj|solutionrelative:crud application\\records\\developerrecord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -25,18 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B0486868-4D36-419A-A39C-07C11155D065}|GamesMarket.DataContext\\GamesMarket.DataContext.csproj|d:\\c#\\crud application\\gamesmarket.datacontext\\interfaces\\igamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B0486868-4D36-419A-A39C-07C11155D065}|GamesMarket.DataContext\\GamesMarket.DataContext.csproj|solutionrelative:gamesmarket.datacontext\\interfaces\\igamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0486868-4D36-419A-A39C-07C11155D065}|GamesMarket.DataContext\\GamesMarket.DataContext.csproj|d:\\c#\\crud application\\gamesmarket.datacontext\\repository\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0486868-4D36-419A-A39C-07C11155D065}|GamesMarket.DataContext\\GamesMarket.DataContext.csproj|solutionrelative:gamesmarket.datacontext\\repository\\gamerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B0486868-4D36-419A-A39C-07C11155D065}|GamesMarket.DataContext\\GamesMarket.DataContext.csproj|d:\\c#\\crud application\\gamesmarket.datacontext\\entities\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B0486868-4D36-419A-A39C-07C11155D065}|GamesMarket.DataContext\\GamesMarket.DataContext.csproj|solutionrelative:gamesmarket.datacontext\\entities\\gameentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21CA1964-CF50-464D-8ACF-790D39618BCD}|GamesMarket\\GamesMarket.csproj|d:\\c#\\crud application\\gamesmarket\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{21CA1964-CF50-464D-8ACF-790D39618BCD}|GamesMarket\\GamesMarket.csproj|solutionrelative:gamesmarket\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B0486868-4D36-419A-A39C-07C11155D065}|GamesMarket.DataContext\\GamesMarket.DataContext.csproj|d:\\c#\\crud application\\gamesmarket.datacontext\\repository\\developerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Developer.cs",
               "DocumentMoniker": "D:\\C#\\CRUD Application\\GamesMarket\\Models\\Developer.cs",
               "RelativeDocumentMoniker": "GamesMarket\\Models\\Developer.cs",
@@ -98,25 +98,23 @@
               "RelativeToolTip": "GamesMarket\\Models\\Developer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T18:35:35.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T18:35:35.675Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "DeveloperRecord.cs",
               "DocumentMoniker": "D:\\C#\\CRUD Application\\CRUD Application\\Records\\DeveloperRecord.cs",
               "RelativeDocumentMoniker": "CRUD Application\\Records\\DeveloperRecord.cs",
-              "ToolTip": "D:\\C#\\CRUD Application\\CRUD Application\\Records\\DeveloperRecord.cs*",
-              "RelativeToolTip": "CRUD Application\\Records\\DeveloperRecord.cs*",
+              "ToolTip": "D:\\C#\\CRUD Application\\CRUD Application\\Records\\DeveloperRecord.cs",
+              "RelativeToolTip": "CRUD Application\\Records\\DeveloperRecord.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T18:35:05.092Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T18:35:05.092Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "GameRecord.cs",
               "DocumentMoniker": "D:\\C#\\CRUD Application\\CRUD Application\\Records\\GameRecord.cs",
               "RelativeDocumentMoniker": "CRUD Application\\Records\\GameRecord.cs",
@@ -124,8 +122,7 @@
               "RelativeToolTip": "CRUD Application\\Records\\GameRecord.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T17:45:47.545Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-27T17:45:47.545Z"
             },
             {
               "$type": "Document",
@@ -133,9 +130,9 @@
               "Title": "DeveloperController.cs",
               "DocumentMoniker": "D:\\C#\\CRUD Application\\CRUD Application\\Controllers\\DeveloperController.cs",
               "RelativeDocumentMoniker": "CRUD Application\\Controllers\\DeveloperController.cs",
-              "ToolTip": "D:\\C#\\CRUD Application\\CRUD Application\\Controllers\\DeveloperController.cs*",
-              "RelativeToolTip": "CRUD Application\\Controllers\\DeveloperController.cs*",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAkwCQAAAAhAAAAAAAAAA==",
+              "ToolTip": "D:\\C#\\CRUD Application\\CRUD Application\\Controllers\\DeveloperController.cs",
+              "RelativeToolTip": "CRUD Application\\Controllers\\DeveloperController.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAiwFIAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-06T18:26:57.335Z",
               "EditorCaption": ""
@@ -146,16 +143,16 @@
               "Title": "GameController.cs",
               "DocumentMoniker": "D:\\C#\\CRUD Application\\CRUD Application\\Controllers\\GameController.cs",
               "RelativeDocumentMoniker": "CRUD Application\\Controllers\\GameController.cs",
-              "ToolTip": "D:\\C#\\CRUD Application\\CRUD Application\\Controllers\\GameController.cs",
-              "RelativeToolTip": "CRUD Application\\Controllers\\GameController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACIAAAANAAAAAAAAAA==",
+              "ToolTip": "D:\\C#\\CRUD Application\\CRUD Application\\Controllers\\GameController.cs*",
+              "RelativeToolTip": "CRUD Application\\Controllers\\GameController.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwCwAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-28T18:36:51.636Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "IGameRepository.cs",
               "DocumentMoniker": "D:\\C#\\CRUD Application\\GamesMarket.DataContext\\Interfaces\\IGameRepository.cs",
               "RelativeDocumentMoniker": "GamesMarket.DataContext\\Interfaces\\IGameRepository.cs",
@@ -167,15 +164,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "GameRepository.cs",
               "DocumentMoniker": "D:\\C#\\CRUD Application\\GamesMarket.DataContext\\Repository\\GameRepository.cs",
               "RelativeDocumentMoniker": "GamesMarket.DataContext\\Repository\\GameRepository.cs",
-              "ToolTip": "D:\\C#\\CRUD Application\\GamesMarket.DataContext\\Repository\\GameRepository.cs",
-              "RelativeToolTip": "GamesMarket.DataContext\\Repository\\GameRepository.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAswEIAAAAJAAAAAAAAAA==",
+              "ToolTip": "D:\\C#\\CRUD Application\\GamesMarket.DataContext\\Repository\\GameRepository.cs*",
+              "RelativeToolTip": "GamesMarket.DataContext\\Repository\\GameRepository.cs*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABAAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T14:15:40.007Z"
+              "WhenOpened": "2024-10-27T14:15:40.007Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -215,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "GameEntity.cs",
               "DocumentMoniker": "D:\\C#\\CRUD Application\\GamesMarket.DataContext\\Entities\\GameEntity.cs",
               "RelativeDocumentMoniker": "GamesMarket.DataContext\\Entities\\GameEntity.cs",
@@ -223,7 +221,8 @@
               "RelativeToolTip": "GamesMarket.DataContext\\Entities\\GameEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T13:50:12.261Z"
+              "WhenOpened": "2024-10-13T13:50:12.261Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -275,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "Game.cs",
               "DocumentMoniker": "D:\\C#\\CRUD Application\\GamesMarket\\Models\\Game.cs",
               "RelativeDocumentMoniker": "GamesMarket\\Models\\Game.cs",
@@ -283,7 +282,8 @@
               "RelativeToolTip": "GamesMarket\\Models\\Game.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAnwBMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-13T13:38:41.78Z"
+              "WhenOpened": "2024-10-13T13:38:41.78Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
