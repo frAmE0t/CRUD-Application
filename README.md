@@ -5,7 +5,7 @@ This is my pet-project. That web-application can perform basic CRUD operations (
 ## Tech Stack
 
 - C#
-- ASP.NET Web API
+- ASP.NET Core
 - Entity Framework
 - MS SQL Server
 
